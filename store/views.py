@@ -26,12 +26,10 @@ class ProduuctAddView(CreateView):
     def get_success_url(self):
         return reverse("home")
 
-
 class ProductListView(ListView):
     template_name="Product_list.html"
     model=Produuct
     context_object_name="data"
-
 
 class ProductUpdateView(UpdateView):
     template_name="product_edit.html"
